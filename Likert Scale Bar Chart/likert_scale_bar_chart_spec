@@ -1,0 +1,235 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"name": "dataset"},
+  "transform": [
+    {
+      "calculate": "datum['Sharepoint Link']",
+      "as": "url"
+    },
+    {
+      "calculate": "1 * 0",
+      "as": "Zero"
+    },
+    {
+      "calculate": "5 * 1",
+      "as": "One"
+    },
+    {
+      "stack": "Score",
+      "as": [
+        "v1",
+        "v2"
+      ],
+      "groupby": [
+        "Project",
+        "Category"
+      ]
+    },
+    {
+      "calculate": "datum.v2-datum.v1",
+      "as": "var"
+    },
+    {
+      "calculate": "datum.var<0.065?datum.v1+0.09:datum.v2",
+      "as": "v2_pos"
+    }
+  ],
+  "facet": {
+    "field": "Project",
+    "type": "ordinal",
+    "title": null,
+    "header": {
+      "labelFontSize": 15,
+      "labelFontWeight": "bold",
+      "labelColor": "white",
+      "labelPadding": "-7",
+      "href": {
+          "field": "url",
+          "type": "nominal"
+        }
+      }
+  },
+  "spec": {
+    "height": 225,
+    "width": 350,
+    "view": {
+      "strokeWidth": 0
+    },
+    "encoding": {
+      "y": {
+        "field": "Category",
+        "type": "ordinal",
+        "axis": null
+      }
+    },
+    "layer": [
+      {
+        "name": "NOT_RECOMMENDED_FLAGTEXT",
+          "transform": [
+            {
+              "filter": "datum.Recommend == 'No'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 15,
+            "font": "Segoe UI",
+            "fontStyle": "normal",
+            "fontWeight": "bold",
+            "yOffset": -5
+          },
+          "encoding": {
+            "text": {
+              "value": "Not Recommended"
+            },
+            "href": {
+              "field": "url",
+              "type": "nominal"
+            },
+            "color": {
+              "condition": {
+                "test": "datum['Category'] == 'Cost Control'", 
+                "value": "#D43A42"
+              },
+              "value": "#272B34"
+            }
+          }
+      },
+      {
+        "name": "BackgroundBAR",
+        "mark": {
+          "type": "bar",
+          "color": "#343945",
+          "height": 7,
+          "cornerRadius": 4,
+          "yOffset": 10,
+          "stroke": "#DEE2E6",
+          "strokeOpacity": 0.25        
+        },
+        "encoding": {
+          "x": {
+            "field": "One",
+            "type": "quantitative",
+            "axis": {
+              "title": null,
+              "offset": 10,
+              "tickCount": 5,
+              "format": "0"
+            },
+            "stack": false
+          },
+          "href": {
+            "field": "url",
+            "type": "nominal"
+          }
+        },
+        "href": {
+          "field": "url",
+          "type": "nominal"
+        }
+      },
+      {
+        "name": "BAR",
+        "mark": {
+          "type": "bar",
+          "height": 7,
+          "yOffset": 10,
+          "cornerRadius": 4
+        },
+        "encoding": {
+          "x": {
+            "field": "v2",
+            "type": "quantitative",
+            "axis": null
+          },
+          "color": {
+            "field": "Color",
+            "type": "nominal",
+            "legend": {
+              "orient": "bottom",
+              "title": null
+            },
+            "scale": null
+          },
+          "href": {
+            "field": "url",
+            "type": "nominal"
+          }
+        }
+      },
+      {
+        "name": "CATEGORY_LABEL",
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "color": "white",
+          "font": "Segoe UI Semibold",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "yOffset": -2
+        },
+        "encoding": {
+          "x": {
+            "field": "Zero",
+            "type": "quantitative"
+          },
+          "text": {
+            "field": "Category",
+            "type": "nominal"
+          },
+          "href": {
+            "field": "url",
+            "type": "nominal"
+          }
+        }
+      },
+      {
+        "name": "DATA_LABEL",
+          "mark": {
+            "type": "text",
+            "color": "#005CA9",
+            "align": "right",
+            "fontSize": 10,
+            "font": "Segoe UI",
+            "fontStyle": "normal",
+            "fontWeight": "bold",
+            "xOffset": 0,
+            "yOffset": 21
+          },
+          "encoding": {
+            "x": {
+              "field": "v2_pos",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "Color",
+              "type": "nominal",
+              "legend": {
+                "orient": "bottom"
+              },
+              "scale": null
+            },
+            "text": {
+              "field": "Rating"
+            },
+            "href": {
+              "field": "url",
+              "type": "nominal"
+            }
+          }
+      }
+    ]
+  },
+  "columns": 3,
+  "spacing": 40,
+  "usermeta": {
+    "information": {
+      "name": "Faceted Bar",
+      "source": {
+        "repo": "PBI-DataVizzle/Deneb",
+        "url": "https://github.com/PBI-DataVizzle/Deneb"
+      }
+    }
+  }
+}
