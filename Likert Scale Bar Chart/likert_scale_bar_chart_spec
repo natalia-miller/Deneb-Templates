@@ -225,9 +225,13 @@
       "calculate": "datum.var<0.065?datum.v1+0.09:datum.v2",
       "as": "v2_pos"
     },
-    {
+    { 
       "calculate": "datum.v2 == 1 ? 'Terrible': datum.v2 == 2 ? 'Bad': datum.v2 == 3 ? 'Average': datum.v2 == 4 ? 'Good' : datum.v2 == 5 ? 'Excellent' : ''",
-      "as": "Rating"
+      "as": "rating"
+    },
+    {
+      "calculate": "datum.v2 == 1 ? '#F27A7C': datum.v2 == 2 ? '#FCA927': datum.v2 == 3 ? '#FFCA0A': datum.v2 == 4 ? '#8AD2D1' : datum.v2 == 5 ? '#7EC99E' : ''",
+      "as": "bar_color"
     }
   ],
   "facet": {
@@ -295,7 +299,7 @@
             "axis": null
           },
           "color": {
-            "field": "Color",
+            "field": "bar_color",
             "type": "nominal",
             "legend": {
               "orient": "bottom",
@@ -331,7 +335,6 @@
         "name": "DATA_LABEL",
           "mark": {
             "type": "text",
-            "color": "#005CA9",
             "align": "right",
             "fontSize": 10,
             "font": "Segoe UI",
@@ -346,7 +349,7 @@
               "type": "quantitative"
             },
             "color": {
-              "field": "Color",
+              "field": "bar_color",
               "type": "nominal",
               "legend": {
                 "orient": "bottom"
@@ -354,7 +357,7 @@
               "scale": null
             },
             "text": {
-              "field": "Rating"
+              "field": "rating"
             }
           }
       }
