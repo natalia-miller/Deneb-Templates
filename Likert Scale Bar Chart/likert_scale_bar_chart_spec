@@ -1,11 +1,203 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"name": "dataset"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#272B34",
+  "data": {
+    "values": [
+      {
+        "Score": 1,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "AH"
+      },
+      {
+        "Score": 1,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "FLV"
+      },
+      {
+        "Score": 2,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "KFZ"
+      },
+      {
+        "Score": 5,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "KV"
+      },
+      {
+        "Score": 3,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "LV"
+      },
+      {
+        "Score": 4,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "RS"
+      },
+      {
+        "Score": 1,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "SV"
+      },
+      {
+        "Score": 4,
+        "Category": "ALL",
+        "Color": "#005CA9",
+        "Project": "UV"
+      },
+      {
+        "Score": 1,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "AH"
+      },
+      {
+        "Score": 2,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "FLV"
+      },
+      {
+        "Score": 3,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "KFZ"
+      },
+      {
+        "Score": 1,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "KV"
+      },
+      {
+        "Score": 4,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "LV"
+      },
+      {
+        "Score": 5,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "RS"
+      },
+      {
+        "Score": 2,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "SV"
+      },
+      {
+        "Score": 3,
+        "Category": "Category A",
+        "Color": "#005CA9",
+        "Project": "UV"
+      },
+      {
+        "Score": 1,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "AH"
+      },
+      {
+        "Score": 1,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "FLV"
+      },
+      {
+        "Score": 2,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "KFZ"
+      },
+      {
+        "Score": 5,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "KV"
+      },
+      {
+        "Score": 2,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "LV"
+      },
+      {
+        "Score": 5,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "RS"
+      },
+      {
+        "Score": 2,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "SV"
+      },
+      {
+        "Score": 3,
+        "Category": "Category B",
+        "Color": "#005CA9",
+        "Project": "UV"
+      },
+      {
+        "Score": 0,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "AH"
+      },
+      {
+        "Score": 0,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "FLV"
+      },
+      {
+        "Score": 4,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "KFZ"
+      },
+      {
+        "Score": 2,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "KV"
+      },
+      {
+        "Score": 2,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "LV"
+      },
+      {
+        "Score": 1,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "RS"
+      },
+      {
+        "Score": 3,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "SV"
+      },
+      {
+        "Score": 3,
+        "Category": "Category C",
+        "Color": "#005CA9",
+        "Project": "UV"
+      }
+    ]
+  },
   "transform": [
-    {
-      "calculate": "datum['Sharepoint Link']",
-      "as": "url"
-    },
     {
       "calculate": "1 * 0",
       "as": "Zero"
@@ -32,6 +224,10 @@
     {
       "calculate": "datum.var<0.065?datum.v1+0.09:datum.v2",
       "as": "v2_pos"
+    },
+    {
+      "calculate": "datum.v2 == 1 ? 'Terrible': datum.v2 == 2 ? 'Bad': datum.v2 == 3 ? 'Average': datum.v2 == 4 ? 'Good' : datum.v2 == 5 ? 'Excellent' : ''",
+      "as": "Rating"
     }
   ],
   "facet": {
@@ -42,11 +238,7 @@
       "labelFontSize": 15,
       "labelFontWeight": "bold",
       "labelColor": "white",
-      "labelPadding": "-7",
-      "href": {
-          "field": "url",
-          "type": "nominal"
-        }
+      "labelPadding": -7
       }
   },
   "spec": {
@@ -63,39 +255,6 @@
       }
     },
     "layer": [
-      {
-        "name": "NOT_RECOMMENDED_FLAGTEXT",
-          "transform": [
-            {
-              "filter": "datum.Recommend == 'No'"
-            }
-          ],
-          "mark": {
-            "type": "text",
-            "align": "center",
-            "fontSize": 15,
-            "font": "Segoe UI",
-            "fontStyle": "normal",
-            "fontWeight": "bold",
-            "yOffset": -5
-          },
-          "encoding": {
-            "text": {
-              "value": "Not Recommended"
-            },
-            "href": {
-              "field": "url",
-              "type": "nominal"
-            },
-            "color": {
-              "condition": {
-                "test": "datum['Category'] == 'Cost Control'", 
-                "value": "#D43A42"
-              },
-              "value": "#272B34"
-            }
-          }
-      },
       {
         "name": "BackgroundBAR",
         "mark": {
@@ -118,15 +277,7 @@
               "format": "0"
             },
             "stack": false
-          },
-          "href": {
-            "field": "url",
-            "type": "nominal"
           }
-        },
-        "href": {
-          "field": "url",
-          "type": "nominal"
         }
       },
       {
@@ -151,10 +302,6 @@
               "title": null
             },
             "scale": null
-          },
-          "href": {
-            "field": "url",
-            "type": "nominal"
           }
         }
       },
@@ -176,10 +323,6 @@
           },
           "text": {
             "field": "Category",
-            "type": "nominal"
-          },
-          "href": {
-            "field": "url",
             "type": "nominal"
           }
         }
@@ -212,10 +355,6 @@
             },
             "text": {
               "field": "Rating"
-            },
-            "href": {
-              "field": "url",
-              "type": "nominal"
             }
           }
       }
