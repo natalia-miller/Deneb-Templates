@@ -4,194 +4,194 @@
   "data": {
     "values": [
       {
-        "Score": 1,
-        "Category": "How would you rate your overall quality of life?",
+        "Score": 2,
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "AH"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "FLV"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "KFZ"
       },
       {
         "Score": 5,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "KV"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "LV"
       },
       {
         "Score": 4,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "RS"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "SV"
       },
       {
         "Score": 4,
-        "Category": "How would you rate your overall quality of life?",
+        "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "UV"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "AH"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "FLV"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "KFZ"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "KV"
       },
       {
         "Score": 4,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "LV"
       },
       {
         "Score": 5,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "RS"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "SV"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your physical health?",
+        "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "UV"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "AH"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "FLV"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "KFZ"
       },
       {
         "Score": 5,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "KV"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "LV"
       },
       {
         "Score": 5,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "RS"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "SV"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your diet?",
+        "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "UV"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "AH"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "FLV"
       },
       {
         "Score": 4,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "KFZ"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "KV"
       },
       {
         "Score": 2,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "LV"
       },
       {
         "Score": 1,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "RS"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "SV"
       },
       {
         "Score": 3,
-        "Category": "How would you rate your financial situation?",
+        "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
         "Project": "UV"
       }
