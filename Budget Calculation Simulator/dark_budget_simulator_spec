@@ -8,6 +8,8 @@
   },
   "background": "#2C2C2C",
   "width": 500,
+  "padding": 10,
+  "autosize": "pad",
   "title": {
     "text": "Budget Targets",
     "align": "left",
@@ -17,6 +19,8 @@
     },
     "subtitleColor": "white",
     "color": "white"
+  },
+  "config": {
   },
   "signals": [
     {"name": "bar_area_height", "value": 500},
