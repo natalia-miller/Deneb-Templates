@@ -1,4 +1,4 @@
-# Deneb-Templates
+# Deneb Templates
 Deneb data visualization templates using Vega and Vega-Lite.
 
 ## Budget Calculation Simulator
