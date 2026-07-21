@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "This visual is a modified version the faceted bar template: https://github.com/PBI-DataVizzle/Deneb",
   "background": "#272B34",
   "data": {
     "values": [
