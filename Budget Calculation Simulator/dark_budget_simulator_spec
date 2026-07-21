@@ -1,11 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "This is an exploration of an alternative brushing technique. The bars show amounts as with any traditional bar chart, but has the added value of being adjustable to satisfy a given target. This type of interactivy gives the user more control and the ability to optimize inputs.",
-  "usermeta": {
-    "developedBy": "Madison Giammaria",
-    "LinkedIn": "https://www.linkedin.com/in/madison-giammaria-58463b33",
-    "email": "giammariam@gmail.com"
-  },
+  "description": "This visual is a modified version of Madison Giammaria's Bar Brushing visual. Source link: https://github.com/Giammaria/Vega-Visuals#bar-brushing",
   "background": "#2C2C2C",
   "width": 500,
   "padding": 10,
@@ -300,7 +295,7 @@
                   "fill": {
                     "signal": "datum['key'] === 'remaining' || datum['value'] === 1 ? 'transparent' : 'red'"
                   },
-                  "fillOpacity": {"value": 0.4},
+                  "fillOpacity": {"value": 0.8},
                   "x": {"signal": "ring_diameter / 2"},
                   "y": {"signal": "ring_diameter / 2"}
                 },
@@ -348,6 +343,7 @@
                   "text": {
                     "signal": "!budget_target_is_valid ? '' : datum['actual budgets'] != datum['target budgets'] ? ['categories must', '= 100%'] : ''"
                   },
+                  "fill": {"value": "white"},
                   "fontSize": {"signal": "ring_diameter / 12"},
                   "baseline": {"value": "middle"},
                   "align": {"value": "center"},
