@@ -2,31 +2,21 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
   "description": "This visual is a modified version the faceted bar template: https://github.com/PBI-DataVizzle/Deneb",
   "background": "#272B34",
+  "columns": 2,
+  "spacing": 40,
   "data": {
     "values": [
       {
         "Score": 2,
         "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
-        "Project": "AH"
-      },
-      {
-        "Score": 1,
-        "Category": "4. How would you rate your overall quality of life?",
-        "Color": "#005CA9",
         "Project": "FLV"
       },
       {
-        "Score": 2,
+        "Score": 4,
         "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "KFZ"
-      },
-      {
-        "Score": 5,
-        "Category": "4. How would you rate your overall quality of life?",
-        "Color": "#005CA9",
-        "Project": "KV"
       },
       {
         "Score": 3,
@@ -35,64 +25,28 @@
         "Project": "LV"
       },
       {
-        "Score": 4,
-        "Category": "4. How would you rate your overall quality of life?",
-        "Color": "#005CA9",
-        "Project": "RS"
-      },
-      {
-        "Score": 1,
-        "Category": "4. How would you rate your overall quality of life?",
-        "Color": "#005CA9",
-        "Project": "SV"
-      },
-      {
-        "Score": 4,
+        "Score": 3,
         "Category": "4. How would you rate your overall quality of life?",
         "Color": "#005CA9",
         "Project": "UV"
       },
       {
-        "Score": 1,
-        "Category": "1. How would you rate your physical health?",
-        "Color": "#005CA9",
-        "Project": "AH"
-      },
-      {
         "Score": 2,
         "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "FLV"
       },
       {
-        "Score": 3,
+        "Score": 5,
         "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "KFZ"
-      },
-      {
-        "Score": 1,
-        "Category": "1. How would you rate your physical health?",
-        "Color": "#005CA9",
-        "Project": "KV"
       },
       {
         "Score": 4,
         "Category": "1. How would you rate your physical health?",
         "Color": "#005CA9",
         "Project": "LV"
-      },
-      {
-        "Score": 5,
-        "Category": "1. How would you rate your physical health?",
-        "Color": "#005CA9",
-        "Project": "RS"
-      },
-      {
-        "Score": 2,
-        "Category": "1. How would you rate your physical health?",
-        "Color": "#005CA9",
-        "Project": "SV"
       },
       {
         "Score": 3,
@@ -104,25 +58,13 @@
         "Score": 1,
         "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
-        "Project": "AH"
-      },
-      {
-        "Score": 1,
-        "Category": "2. How would you rate your diet?",
-        "Color": "#005CA9",
         "Project": "FLV"
       },
       {
-        "Score": 2,
+        "Score": 4,
         "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "KFZ"
-      },
-      {
-        "Score": 5,
-        "Category": "2. How would you rate your diet?",
-        "Color": "#005CA9",
-        "Project": "KV"
       },
       {
         "Score": 2,
@@ -131,28 +73,10 @@
         "Project": "LV"
       },
       {
-        "Score": 5,
-        "Category": "2. How would you rate your diet?",
-        "Color": "#005CA9",
-        "Project": "RS"
-      },
-      {
-        "Score": 2,
-        "Category": "2. How would you rate your diet?",
-        "Color": "#005CA9",
-        "Project": "SV"
-      },
-      {
         "Score": 3,
         "Category": "2. How would you rate your diet?",
         "Color": "#005CA9",
         "Project": "UV"
-      },
-      {
-        "Score": 3,
-        "Category": "3. How would you rate your financial situation?",
-        "Color": "#005CA9",
-        "Project": "AH"
       },
       {
         "Score": 2,
@@ -170,25 +94,7 @@
         "Score": 2,
         "Category": "3. How would you rate your financial situation?",
         "Color": "#005CA9",
-        "Project": "KV"
-      },
-      {
-        "Score": 2,
-        "Category": "3. How would you rate your financial situation?",
-        "Color": "#005CA9",
         "Project": "LV"
-      },
-      {
-        "Score": 1,
-        "Category": "3. How would you rate your financial situation?",
-        "Color": "#005CA9",
-        "Project": "RS"
-      },
-      {
-        "Score": 3,
-        "Category": "3. How would you rate your financial situation?",
-        "Color": "#005CA9",
-        "Project": "SV"
       },
       {
         "Score": 3,
@@ -363,16 +269,5 @@
           }
       }
     ]
-  },
-  "columns": 3,
-  "spacing": 40,
-  "usermeta": {
-    "information": {
-      "name": "Faceted Bar",
-      "source": {
-        "repo": "PBI-DataVizzle/Deneb",
-        "url": "https://github.com/PBI-DataVizzle/Deneb"
-      }
-    }
   }
 }
